@@ -1,7 +1,6 @@
 # caipu — 家常菜谱手册
 
-做饭小白的 AI Studio 做菜对话存档站，部署在 Cloudflare Pages：
-https://home-recipes-65a.pages.dev
+做饭小白的 AI Studio 做菜对话存档站，部署在 Cloudflare Pages
 
 ```
 ├── build.py               # 提取 aistudio 对话 → public/data/recipes.json
@@ -36,4 +35,3 @@ git add -A && git commit -m "加菜谱：xxx" && git push
 npx wrangler pages dev   # 或任何静态服务器指向 public/
 ```
 
-注意：直接双击 index.html 不行（fetch JSON 受 file:// 限制），必须走 http。
