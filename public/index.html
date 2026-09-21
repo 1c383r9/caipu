@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家常菜谱手册</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>🍳 家常菜谱手册</h1>
+    <div class="sub"><span class="tag">食谱</span><span id="meta"></span></div>
+    <input id="search" type="search" placeholder="搜索菜名 / 食材 / 技巧，如：平菇、藕、不粘锅…">
+  </div>
+</header>
+<main class="grid" id="grid"></main>
+<div id="empty" class="empty hidden">没有匹配的菜谱，换个关键词试试</div>
+<div id="overlay"><div class="detail" id="detailBox"></div></div>
+<footer id="foot"></footer>
+<script src="app.js"></script>
+</body>
+</html>
